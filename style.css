@@ -1,0 +1,115 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --vary-dark-saturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.attribution {
+    position: fixed;
+    font-size: 12px;
+    bottom: 1rem;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--dark-cyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-position: top -500px left -310px,
+    bottom -550px right -300px;
+    background-repeat: no-repeat, no-repeat;
+    padding-block: 3rem;
+}
+
+.container {
+    width: 24rem;
+    height: 29rem;
+    display: grid;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: #ffff;
+    padding-block-end: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.card-pattern-bg {
+    width: 100%;
+    padding-block-end: 10rem;
+}
+
+.card-pattern-bg img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.center-img {
+    display: grid;
+    place-items: center;
+}
+
+.center-img img {
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    border: 5px solid #ffff;
+    bottom: 16rem; 
+}
+
+.card-bottom {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-inline: 3rem;
+    width: 100%;
+    padding-block-start: 1.75rem;
+    /* padding-block-end: 7rem; */
+    border-top: 1px solid hsla(227, 10%, 46%, 0.25);
+
+    position: relative;
+    bottom: 2rem;
+}
+
+.value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.des {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-mid {
+    display: grid;
+    gap: 0.5rem;
+    position: relative;
+    bottom: 4.5rem;
+}
+
+.description {
+    opacity: 0.5;
+    letter-spacing: 0.1rem;
+}
+
+span, .location {
+    opacity: 0.5;
+    font-weight: 400;
+}
